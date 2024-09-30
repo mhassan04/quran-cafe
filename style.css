@@ -1,157 +1,182 @@
-body{
-    margin:0;
-    padding:0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-}
-header, footer{
-    background-color: #1F2937;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+*{
     margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* HEADER */
+
+header{
+    background-color: #1F2937;
+    padding: 1em 13em;
 }
 
 .logo a{
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 900;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.right-side a{
+    font-size: 18px;
+    color:#E5E7EB;
     text-decoration: none;
-    padding: 40px;
+}
+
+/* WELCOME */
+
+.welcome{
+    padding: 7em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.welcome .left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.welcome .right{
+    flex-shrink: 0;
+    width: 50%;
+}
+
+.text1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.para1 {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.picture{
+    width: 500px;
+    height: auto;
+}
+
+.button1{
+    padding: 7px 1em;
+    width: 120px;
+    background-color: #3882F6;
+    border-radius: 8px;
+    border: none;
+    color:#FFF;
+}
+
+/* Links */
+
+.spotify-links{
+    text-align: center;
+    margin: 40px 0;
+}
+.middle {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quran{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*  QUOTE */
+
+.quote{
+    background-color: #E5E7EB;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+blockquote{
+    font-size: 24px;
+    color:#1F2937;
+    font-style: italic;
     margin: 0;
-    
+    padding: 0;
+    text-align: right;
+}
+cite{
+    display: block;
+    font-size: 18px; 
+    color: #6B7280; 
+    margin-top: 10px;
+    text-align: right;
 }
 
-.right-side {
-    display: flex; /* Ensure it's a flex container */
-    align-items: center; /* Center items vertically */
-    padding: 40px;
+h3 {
+    font-size: 22px; 
+    color: #1F2937;  
+    margin-top: 20px;
+    text-align:center;
 }
 
-.right-side li {
-    margin-left: 20px; /* Add space between header links */
+/* SIGN-UP */
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 13em;
 }
 
-.right-side a {
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 3em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container button{
+    border: 2px solid #FFF;
+}
+
+.left h2{
+    font-size: 24px;
+    color: #FFF;
+}
+
+.left p{
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0; /* Remove default padding from ul */
-    margin: 0;
-}
+
+/* FOOTER */
 
 .footer{
     background-color: #1F2937;
     padding: 20px;
     text-align: center;
     color:#F9FAF8;
+    position: relative;
     bottom: 0;
-    justify-content: center;
-    
+    width: 100%;
 }
-
-
-
-.main {
-    background-color: #1F2937;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    padding: 0 40px; /* Adds some space around the content */
-}
-
-.button1{
-    font-family: 'Open Sans', sans-serif;
-    padding: 15px 30px;
-    background-color: #F9FAF8;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    color: #1F2937;
-    border-radius: 5px; 
-}
-.leftside img{
-    max-width: 500px;
-    height: auto;
-}
-.para1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: #E5E7EB;
-    margin-bottom: 30px;
-}
-.text1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    color: #F9FAF8;
-    margin-bottom: 20px;
-}
-button:hover {
-    background-color: #E5E7EB;
-}
-.rightside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-wrap: wrap;
-    max-width: 50%; /* Ensure the text column doesn't take too much space */
-    margin-left: 40px; /* Space between image and text */
-}
-
-.quote{
-    background-color: #E5E7EB;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-
-}
-
-.quote p {
-    font-size: 36px; /* Font size for the paragraph texts */
-    font-style: italic; /* Make the text italic */
-    color: #1F2937; /* Text color */
-    margin: 10px 0; /* Space between paragraphs */
-}
-
-.quote h3 {
-    font-size: 24px; /* Font size for the heading */
-    color: #1F2937; /* Same color for consistency */
-    margin-top: 10px; /* Space above the heading */
-    text-align:center;
-}
-
-.spotify-links{
-    background-color: #1F2937;
-    display:flex;
-    justify-content: space-around;
-}
-.middle {
-    text-align: center;
-    color:#F9FAF8;
-    justify-content: center;
-    padding: 10px;
-}
-
-.quran iframe{
-    margin: 0 20px;
-    justify-content: space-between;
-}
-
-
-.playlist{
-    border-radius: 5px;
-}
-
